@@ -1,0 +1,10 @@
+import 'package:tdd_tutorial/core/utils/typedef.dart';
+
+abstract class UseCaseWithParams<Type, Params> {
+  ResultFuture<Type> call(Params params);
+}
+
+abstract class UseCaseWithoutParams<Type> {
+  const UseCaseWithoutParams();
+  ResultFuture<Type> call();
+}
